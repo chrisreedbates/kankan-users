@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Report a problem</title>
+<meta name="description" content="Review a KanKan problem report and email it to support if you choose.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+<header><nav aria-label="Main"><a href="index.html"><strong>KanKan</strong></a> <a href="support.html">Support</a> <a href="contact.html">Report a problem</a> <a href="privacy.html">Privacy</a></nav></header>
+<main>
+<h1>Report a problem</h1>
+<p>Nothing on this page is sent anywhere by the page itself. You choose whether to email the report.</p>
+<div id="noreport">
+<p>No report from the app is attached. To get help, email <a href="mailto:support@getkankan.com">support@getkankan.com</a> and describe the problem.</p>
+</div>
+<p id="bad" class="status status-error" role="alert" hidden>This report could not be read. It may be damaged or too large. You can still email <a href="mailto:support@getkankan.com">support@getkankan.com</a> and describe the problem.</p>
+<section id="reportbox" class="report-box note" hidden>
+<h2>Report from the link you opened</h2>
+<p class="meta">This is the exact text that would be shared. It holds app and device details, counts and a technical event log (operation names, positions, counts and times), not your boards or card text.</p>
+<pre id="summary" class="report-text"></pre>
+<details><summary>Show diagnostics</summary><pre id="diag" class="report-text" tabindex="0"></pre></details>
+<div class="field">
+<label for="msg">What happened? (optional)</label>
+<textarea id="msg" maxlength="2000"></textarea>
+</div>
+<p><strong>Two steps:</strong> 1. Copy report. 2. Email us, then paste the report into the email.</p>
+<div class="actions">
+<button type="button" class="button secondary" id="copy">1. Copy report</button>
+<button type="button" class="button" id="email">2. Email us</button>
+</div>
+<p id="status" class="status" role="status"></p>
+</section>
+</main>
+<footer><a href="privacy.html">Privacy Policy</a><a href="support.html">Support</a><a href="contact.html">Report a problem</a><a href="mentions-legales.html">Legal notice</a><p>KanKan is published by DECEMBER CAPITAL. &copy; 2026 DECEMBER CAPITAL.</p></footer>
+</div>
+<script src="contact.js"></script>
+</body>
+</html>
