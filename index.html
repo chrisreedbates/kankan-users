@@ -65,7 +65,7 @@
 </video>
 </div>
 </div>
-<figcaption class="vh">A 27-second screen recording of KanKan on iPhone. The card Launch the bakery website is opened, then its own board. Its cards are dragged to Done. Back on My Board, the bakery card has moved to Done by itself, with progress 4 of 4.</figcaption>
+<figcaption class="vh">A 28-second screen recording of KanKan on iPhone, without sound. The card Launch the bakery website is opened, then its own board. Its cards are dragged to Done. Back on the card, its status is now Done with progress 4 of 4, and its Activity log shows a typed line and two lines the app added. Back on My Board, the project sits in Done.</figcaption>
 <button type="button" class="vbtn" id="vbtn" hidden><span class="vbtn-icon" aria-hidden="true"></span><span class="vbtn-label">Pause video</span></button>
 </figure>
 </div>
@@ -108,6 +108,26 @@
 </div>
 </section>
 
+<section id="activity" class="activity" aria-labelledby="activity-title">
+<div class="inner act-grid">
+<div class="act-copy">
+<p class="eyebrow">Activity log</p>
+<h2 id="activity-title">Pick up where you left off.</h2>
+<p class="section-lead">Every card keeps a dated log, newest first. Forgot where you were on a project? Open the card and read the last things you did.</p>
+<ul class="act-list">
+<li><strong>Write what you did.</strong> Type a line in the card&rsquo;s Activity box. You can edit or delete your own lines later.</li>
+<li><strong>Moves are noted for you.</strong> When you move the card to another column, KanKan adds a line.</li>
+<li><strong>So are checklist ticks.</strong> Tick or untick an item, and KanKan adds a line.</li>
+</ul>
+<p class="meta">Nothing else adds lines. A project that moves to Done because its board is finished does not add one. The log stays with the card when you archive, restore or export it.</p>
+</div>
+<div class="act-shots">
+<figure class="mini-phone"><picture><source srcset="img/app/activity-log-compose-dark.png" media="(prefers-color-scheme: dark)"><img src="img/app/activity-log-compose.png" width="1320" height="2868" loading="lazy" decoding="async" alt="The Activity section of the card Launch the bakery website. The text Sent the menu proofs to the printer is typed in the box that asks: What did you do? The keyboard is open."></picture></figure>
+<figure class="mini-phone"><picture><source srcset="img/app/activity-log-posted-dark.png" media="(prefers-color-scheme: dark)"><img src="img/app/activity-log-posted.png" width="1320" height="2868" loading="lazy" decoding="async" alt="The same Activity section after sending. Newest first: Sent the menu proofs to the printer, Domain renewed until 2027, Moved: To Do to Doing, and Ticked: Order business cards, each with a date and time. Below them: Show all (5)."></picture></figure>
+</div>
+</div>
+</section>
+
 <section id="features" class="features" aria-labelledby="features-title">
 <div class="inner">
 <p class="eyebrow">What you get</p>
@@ -122,6 +142,11 @@
 <svg class="ficon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 3.5a8.5 8.5 0 0 1 8.5 8.5H12z"/></svg>
 <h3>Progress that rolls up</h3>
 <p>A card with a board shows how much of that board is done. Reopen work, and the parent moves back too.</p>
+</li>
+<li>
+<svg class="ficon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7v5l3 2"/><circle cx="12" cy="12" r="8.5"/></svg>
+<h3>Activity log</h3>
+<p>Each card keeps a dated log, newest first. Write what you did. Column moves and checklist ticks are added for you.</p>
 </li>
 <li>
 <svg class="ficon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5l1.6 1.6L8.5 5M4 13.5l1.6 1.6 2.9-3.1M11.5 7h8.5M11.5 14h8.5M4.5 19.5h15.5"/></svg>

@@ -160,9 +160,21 @@ summary{cursor:pointer;color:var(--link)}
 .deeper p{margin:0;color:var(--muted);max-width:32rem}
 
 
+/* Activity log */
+.activity{padding:clamp(4rem,9vw,7rem) 0;border-top:1px solid var(--rule)}
+.act-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(2rem,5vw,4.5rem);align-items:center}
+.act-list{list-style:none;padding:0;margin:2rem 0 1.5rem;display:grid;gap:1rem}
+.act-list li{margin:0;padding-left:1.6rem;position:relative;color:var(--muted)}
+.act-list li::before{content:"";position:absolute;left:0;top:.5rem;width:.6rem;height:.6rem;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px var(--accent-soft)}
+.act-list strong{color:var(--fg)}
+.act-copy .meta{max-width:30rem}
+.act-shots{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.25rem;align-items:start}
+.act-shots .mini-phone{max-width:16rem}
+.act-shots .mini-phone:last-child{margin-top:3rem}
+
 /* Features */
 .features{padding:clamp(4rem,9vw,7.5rem) 0;background:linear-gradient(180deg,transparent,var(--card) 40%,transparent)}
-.feature-grid{list-style:none;padding:0;margin:3rem 0 0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem}
+.feature-grid{list-style:none;padding:0;margin:3rem 0 0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}
 .feature-grid li{margin:0;padding:1.5rem 1.4rem 1.6rem;background:var(--bg-elev);border:1px solid var(--rule);border-radius:var(--radius);box-shadow:var(--shadow)}
 .feature-grid h3{margin:1rem 0 .4rem;font-size:1.05rem}
 .feature-grid p{margin:0;color:var(--muted);font-size:.95rem;line-height:1.55}
@@ -197,6 +209,8 @@ summary{cursor:pointer;color:var(--link)}
   .band{grid-template-columns:1fr}
   .walk{grid-template-columns:repeat(2,minmax(0,1fr));gap:2.5rem 2rem}
   .walk .mini-phone{max-width:14rem}
+  .act-grid{grid-template-columns:1fr}
+  .act-shots{max-width:34rem}
 }
 @media (max-width:44rem){
   .feature-grid{grid-template-columns:1fr}
@@ -205,6 +219,8 @@ summary{cursor:pointer;color:var(--link)}
   .walk .mini-phone{max-width:none}
   .deeper{grid-template-columns:1fr;gap:1.5rem;margin-top:2.5rem}
   .deeper .mini-phone{max-width:11rem}
+  .act-shots{gap:.9rem}
+  .act-shots .mini-phone:last-child{margin-top:1.75rem}
   .band{border-radius:1.5rem}
   .phone{width:min(16.5rem,70vw);border-radius:2.8rem;padding:.55rem}
   .screen{border-radius:2.3rem}
