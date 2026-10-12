@@ -28,6 +28,7 @@
 <meta name="twitter:image" content="https://getkankan.com/og-image.png">
 <meta name="twitter:image:alt" content="The KanKan app icon and the words: Every card can hold a whole board.">
 <link rel="stylesheet" href="style.css">
+<script src="js/video.js" defer></script>
 </head>
 <body class="home">
 <a class="skip" href="#main">Skip to content</a>
@@ -52,15 +53,20 @@
 <li>Optional private iCloud sync</li>
 </ul>
 </div>
-<figure class="device" aria-label="Preview of KanKan on iPhone: the board of a card named Plan the garden.">
+<figure class="device">
 <div class="phone">
 <div class="screen">
-<img src="media/kankan-preview-poster.png" width="886" height="1920" alt="">
-<video autoplay muted loop playsinline preload="metadata" disablepictureinpicture disableremoteplayback poster="media/kankan-preview-poster.png" aria-hidden="true" tabindex="-1">
+<picture><source srcset="media/kankan-preview-poster-dark.png" media="(prefers-color-scheme: dark)"><img class="poster" src="media/kankan-preview-poster.png" width="1320" height="2868" alt="KanKan on iPhone: My Board with To Do and Doing columns. In Doing, the card Launch the bakery website shows a due date, checklist 1 of 3 and board progress 2 of 4."></picture>
+<video id="hero-video" autoplay muted loop playsinline preload="metadata" disablepictureinpicture disableremoteplayback aria-hidden="true" tabindex="-1">
+<source src="media/kankan-preview-dark.mp4" type="video/mp4" media="(prefers-color-scheme: dark)">
+<source src="media/kankan-preview-dark.webm" type="video/webm" media="(prefers-color-scheme: dark)">
 <source src="media/kankan-preview.mp4" type="video/mp4">
+<source src="media/kankan-preview.webm" type="video/webm">
 </video>
 </div>
 </div>
+<figcaption class="vh">A 27-second screen recording of KanKan on iPhone. The card Launch the bakery website is opened, then its own board. Its cards are dragged to Done. Back on My Board, the bakery card has moved to Done by itself, with progress 4 of 4.</figcaption>
+<button type="button" class="vbtn" id="vbtn" hidden><span class="vbtn-icon" aria-hidden="true"></span><span class="vbtn-label">Pause video</span></button>
 </figure>
 </div>
 </section>
@@ -69,33 +75,36 @@
 <div class="inner">
 <p class="eyebrow">How it works</p>
 <h2 id="how-title">The big picture and the next step, in one place.</h2>
-<ol class="steps">
-<li><h3>Start with cards.</h3><p>Add a card in seconds. Move it from To Do to Doing to Done. Simple work stays simple.</p></li>
-<li><h3>Give a card a board.</h3><p>When a card turns into a project, add a board to it. Boards can sit inside boards, as deep as you need.</p></li>
-<li><h3>Progress rolls up.</h3><p>A card with a board takes its status from the work inside. When the last card there is done, the parent moves to Done by itself.</p></li>
+<p class="section-lead">Real screens from KanKan on iPhone. One project, followed from start to finish.</p>
+<ol class="walk" tabindex="0" aria-label="Walkthrough in four screens">
+<li>
+<figure class="mini-phone"><picture><source srcset="img/app/top-board-dark.png" media="(prefers-color-scheme: dark)"><img src="img/app/top-board.png" width="1320" height="2868" loading="lazy" decoding="async" alt="My Board with To Do, Doing and Done. In Doing, Launch the bakery website shows a due date of Oct 13, 2026, checklist 1 of 3 and board progress 2 of 4."></picture></figure>
+<h3>Start on one board.</h3>
+<p>Your work moves through To Do, Doing and Done. A card that holds a board shows its progress, here 2 of 4.</p>
+</li>
+<li>
+<figure class="mini-phone"><picture><source srcset="img/app/card-detail-dark.png" media="(prefers-color-scheme: dark)"><img src="img/app/card-detail.png" width="1320" height="2868" loading="lazy" decoding="async" alt="The card Launch the bakery website. Status Doing, with the note: this card&#39;s status follows its board. Board progress 2 of 4, Open Board, a due date with reminders, and notes."></picture></figure>
+<h3>Open the card.</h3>
+<p>Due date, reminders, notes and a checklist stay with the work. Its status follows its board.</p>
+</li>
+<li>
+<figure class="mini-phone"><picture><source srcset="img/app/sub-board-dark.png" media="(prefers-color-scheme: dark)"><img src="img/app/sub-board.png" width="1320" height="2868" loading="lazy" decoding="async" alt="The board inside Launch the bakery website. To Do: Write the About page. Doing: Publish the menu page. More cards are in Done."></picture></figure>
+<h3>Work on its board.</h3>
+<p>The project gets its own To Do, Doing and Done. Break the work down as far as you need.</p>
+</li>
+<li>
+<figure class="mini-phone"><picture><source srcset="img/app/top-board-done-dark.png" media="(prefers-color-scheme: dark)"><img src="img/app/top-board-done.png" width="1320" height="2868" loading="lazy" decoding="async" alt="My Board paged to Doing and Done. Launch the bakery website is now in Done, with board progress 4 of 4 in green."></picture></figure>
+<h3>Progress rolls up.</h3>
+<p>When the last card on its board is done, the project moves to Done by itself.</p>
+</li>
 </ol>
-<figure class="nest" aria-label="Illustration: on My Board, the card Plan the garden shows 2 of 4 done. Opening it shows its own board with To Do, Doing and Done columns.">
-<div class="mini" aria-hidden="true">
-<p class="mini-title">My Board</p>
-<div class="mini-cols">
-<div class="mini-col"><p class="mini-head">To Do</p><p class="mini-card">Get travel insurance</p><p class="mini-card">Mow the lawn</p></div>
-<div class="mini-col"><p class="mini-head">Doing</p><p class="mini-card is-parent"><span>Plan the garden</span><span class="mini-progress"><span class="bar"><span class="fill"></span></span>2 of 4</span></p></div>
-<div class="mini-col"><p class="mini-head">Done</p><p class="mini-card is-done">Renew passport</p></div>
+<div class="deeper">
+<figure class="mini-phone"><picture><source srcset="img/app/sub-sub-board-dark.png" media="(prefers-color-scheme: dark)"><img src="img/app/sub-sub-board.png" width="1320" height="2868" loading="lazy" decoding="async" alt="The board of Shoot product photos, a card inside Launch the bakery website. A breadcrumb reads My Board, Launch the bakery website, Shoot product photos. Done holds Bread close-ups and Cake display shots."></picture></figure>
+<div>
+<h3>Boards inside boards.</h3>
+<p>A card on a project board can hold a board too. Here, Shoot product photos sits inside the bakery project. A breadcrumb shows the path back to My Board, so you never get lost.</p>
 </div>
 </div>
-<div class="nest-link" aria-hidden="true">
-<svg viewBox="0 0 48 24" width="48" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h38M34 5l8 7-8 7"/></svg>
-<span>Open card</span>
-</div>
-<div class="mini is-child" aria-hidden="true">
-<p class="mini-title"><span class="crumb">My Board &rsaquo;</span> Plan the garden</p>
-<div class="mini-cols">
-<div class="mini-col"><p class="mini-head">To Do</p><p class="mini-card">Plant tomatoes</p></div>
-<div class="mini-col"><p class="mini-head">Doing</p><p class="mini-card is-doing">Set up watering</p></div>
-<div class="mini-col"><p class="mini-head">Done</p><p class="mini-card is-done">Build raised beds</p><p class="mini-card is-done">Order seeds</p></div>
-</div>
-</div>
-</figure>
 </div>
 </section>
 
@@ -107,7 +116,7 @@
 <li>
 <svg class="ficon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4"/><rect x="8" y="8" width="8" height="8" rx="2"/></svg>
 <h3>Boards inside cards</h3>
-<p>Any card can hold its own board. A path at the top shows where you are, so you never get lost.</p>
+<p>Any card can hold its own board, and those cards can hold boards too. On deeper boards, a breadcrumb shows the path.</p>
 </li>
 <li>
 <svg class="ficon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 3.5a8.5 8.5 0 0 1 8.5 8.5H12z"/></svg>
