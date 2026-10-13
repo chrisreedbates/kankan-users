@@ -196,7 +196,7 @@ html:not(.js) .screen video{display:none}
 .nest-text h3{margin:0 0 .6rem;font-size:clamp(1.3rem,2.2vw,1.6rem);letter-spacing:-.025em}
 .nest-text p{margin:0;color:var(--muted)}
 .hl{position:relative}
-.hl .ring{position:absolute;left:49.96%;top:16.98%;width:39.09%;height:6.31%;border-radius:5% / 14.4%;box-shadow:0 0 0 2px var(--accent),0 0 0 6px var(--accent-soft);pointer-events:none}
+.hl .ring{position:absolute;left:49.848%;top:16.981%;width:39.318%;height:6.311%;border-radius:5% / 14.4%;box-shadow:0 0 0 2px var(--accent),0 0 0 6px var(--accent-soft);pointer-events:none}
 .tagline{font-size:clamp(1.3rem,2.6vw,1.6rem);font-weight:620;letter-spacing:-.02em;color:var(--link);margin:0 0 .6rem}
 
 /* Features */
