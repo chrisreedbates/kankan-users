@@ -116,7 +116,7 @@ summary{cursor:pointer;color:var(--link)}
   background:radial-gradient(42rem 28rem at 78% 30%,rgba(11,94,90,.16),transparent 70%),radial-gradient(26rem 18rem at 92% 75%,rgba(255,176,58,.16),transparent 70%),radial-gradient(30rem 20rem at 8% 10%,rgba(11,94,90,.06),transparent 70%)}
 @media (prefers-color-scheme:dark){.hero::before{background:radial-gradient(42rem 28rem at 78% 30%,rgba(63,183,174,.2),transparent 70%),radial-gradient(26rem 18rem at 92% 75%,rgba(255,176,58,.1),transparent 70%),radial-gradient(30rem 20rem at 8% 10%,rgba(63,183,174,.07),transparent 70%)}}
 .hero-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(2rem,5vw,4rem);align-items:center}
-.hero h1{font-size:clamp(2.5rem,5.4vw,4.3rem);line-height:1.04;letter-spacing:-.042em;font-weight:750;margin:0 0 1rem;max-width:15ch}
+.hero h1{font-size:clamp(2.2rem,4.7vw,3.75rem);line-height:1.05;letter-spacing:-.04em;font-weight:750;margin:0 0 1rem;max-width:16ch}
 .subline{font-size:clamp(1.35rem,2.4vw,1.75rem);line-height:1.25;letter-spacing:-.02em;font-weight:620;color:var(--fg);margin:0 0 1.4rem;opacity:.72}
 .brandword{color:var(--brand);background:linear-gradient(100deg,#0b5e5a 10%,#13857e 90%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
 @media (prefers-color-scheme:dark){.brandword{background:linear-gradient(100deg,#6fd3c8 10%,#a6e6dd 90%);-webkit-background-clip:text;background-clip:text}}
@@ -230,7 +230,7 @@ html:not(.js) .screen video{display:none}
 /* Responsive */
 @media (max-width:60rem){
   .hero-grid{grid-template-columns:1fr}
-  .hero h1{max-width:16ch}
+  .hero h1{max-width:17ch}
   .device{margin-top:1rem}
   .feature-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
   .band{grid-template-columns:1fr}
