@@ -174,7 +174,9 @@ html:not(.js) .screen video{display:none}
 .feature-grid.fg-4{grid-template-columns:repeat(4,minmax(0,1fr))}
 .how .inner{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:clamp(2rem,5vw,4.5rem);align-items:start}
 .how .inner>*:not(.walk){grid-column:1}
-.how .walk-2{grid-column:2;grid-row:1 / span 4;margin:0}
+.how .inner{grid-template-rows:auto auto auto auto 1fr}
+.how .walk-2{grid-column:2;grid-row:1 / span 5;margin:0}
+.how .section-lead+.section-lead{margin-top:.9rem}
 .how .eyebrow{margin-top:4rem}
 .bigger{padding:clamp(4rem,9vw,7rem) 0;border-top:1px solid var(--rule)}
 .pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.5rem;margin:3rem 0 1rem}
@@ -186,6 +188,15 @@ html:not(.js) .screen video{display:none}
 .pair-1 .pair-item h3{font-size:clamp(1.35rem,2.4vw,1.75rem);letter-spacing:-.025em;margin-bottom:.7rem}
 .pair-1 .pair-item p{font-size:1.05rem;max-width:34rem}
 .focus-sec{border-top:1px solid var(--rule);padding-top:clamp(4rem,9vw,7rem)}
+.nest2{display:grid;grid-template-columns:minmax(0,13rem) auto minmax(0,13rem) minmax(0,1fr);gap:1.5rem 2rem;align-items:center;margin:3rem 0 1.5rem;padding:clamp(1.5rem,4vw,3rem);border-radius:1.75rem;background:var(--card);border:1px solid var(--rule)}
+.nest-step{margin:0}
+.nest-step figcaption{margin-top:1rem;font-size:.9rem;line-height:1.45;color:var(--muted);text-align:center}
+.nest-arrow{display:flex;flex-direction:column;align-items:center;gap:.5rem;max-width:7.5rem;text-align:center;color:var(--link);font-size:.78rem;font-weight:650;line-height:1.3}
+.nest-text{padding-left:clamp(0rem,2vw,1.5rem)}
+.nest-text h3{margin:0 0 .6rem;font-size:clamp(1.3rem,2.2vw,1.6rem);letter-spacing:-.025em}
+.nest-text p{margin:0;color:var(--muted)}
+.hl{position:relative}
+.hl .ring{position:absolute;left:49.96%;top:16.98%;width:39.09%;height:6.31%;border-radius:5% / 14.4%;box-shadow:0 0 0 2px var(--accent),0 0 0 6px var(--accent-soft);pointer-events:none}
 .tagline{font-size:clamp(1.3rem,2.6vw,1.6rem);font-weight:620;letter-spacing:-.02em;color:var(--link);margin:0 0 .6rem}
 
 /* Features */
@@ -229,6 +240,8 @@ html:not(.js) .screen video{display:none}
   .how .eyebrow{margin-top:0}
   .how .walk-2{margin-top:2.5rem}
   .pair{grid-template-columns:1fr}
+  .nest2{grid-template-columns:minmax(0,13rem) auto minmax(0,13rem);justify-content:center}
+  .nest-text{grid-column:1 / -1;padding:1rem 0 0;max-width:36rem}
   .walk .mini-phone{max-width:14rem}
   .act-grid{grid-template-columns:1fr}
   .focus-sec .act-shots{order:2}
@@ -238,6 +251,9 @@ html:not(.js) .screen video{display:none}
   .walk-2{grid-template-columns:repeat(2,minmax(0,1fr));gap:1.25rem}
   .walk-2 h3{font-size:1rem}
   .feature-grid.fg-4{grid-template-columns:1fr}
+  .nest2{grid-template-columns:minmax(0,15rem);justify-content:center;padding:1.5rem 1.25rem}
+  .nest-arrow{max-width:none;flex-direction:row;justify-content:center}
+  .nest-arrow svg{transform:rotate(90deg)}
   .pair-item,.pair-1 .pair-item{grid-template-columns:minmax(0,8.5rem) minmax(0,1fr);gap:1.1rem;padding:1rem}
   .pair-1 .pair-item h3{font-size:1.1rem}
   .pair-1 .pair-item p{font-size:.92rem}
