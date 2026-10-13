@@ -137,7 +137,7 @@ summary{cursor:pointer;color:var(--link)}
 .screen{position:relative;aspect-ratio:1320/2868;border-radius:2.6rem;overflow:hidden;background:#f4f4ef;transform:translateZ(0)}
 .screen img,.screen video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .screen picture{position:absolute;inset:0}
-@media (prefers-reduced-motion:reduce){html:not(.js) .screen video{display:none!important}}
+html:not(.js) .screen video{display:none}
 .device{flex-direction:column;align-items:center;gap:1rem}
 .vbtn{display:inline-flex;align-items:center;gap:.5rem;font:inherit;font-size:.82rem;font-weight:600;color:var(--muted);background:var(--bg-elev);border:1px solid var(--rule);border-radius:999px;padding:.4rem .85rem .4rem .65rem;min-height:2.25rem;cursor:pointer;box-shadow:var(--shadow)}
 .vbtn:hover{color:var(--fg)}
@@ -181,6 +181,11 @@ summary{cursor:pointer;color:var(--link)}
 .pair-item{display:grid;grid-template-columns:minmax(0,11.5rem) minmax(0,1fr);gap:1.75rem;align-items:center;padding:clamp(1.25rem,2.5vw,2rem);border-radius:1.6rem;background:var(--card);border:1px solid var(--rule)}
 .pair-item h3{margin:0 0 .45rem;font-size:1.2rem;letter-spacing:-.015em}
 .pair-item p{margin:0;color:var(--muted);font-size:.97rem;line-height:1.55}
+.pair-1{grid-template-columns:1fr}
+.pair-1 .pair-item{grid-template-columns:minmax(0,13rem) minmax(0,1fr);gap:clamp(2rem,6vw,5rem);padding:clamp(1.5rem,4vw,3rem) clamp(1.5rem,5vw,4rem)}
+.pair-1 .pair-item h3{font-size:clamp(1.35rem,2.4vw,1.75rem);letter-spacing:-.025em;margin-bottom:.7rem}
+.pair-1 .pair-item p{font-size:1.05rem;max-width:34rem}
+.focus-sec{border-top:1px solid var(--rule);padding-top:clamp(4rem,9vw,7rem)}
 .tagline{font-size:clamp(1.3rem,2.6vw,1.6rem);font-weight:620;letter-spacing:-.02em;color:var(--link);margin:0 0 .6rem}
 
 /* Features */
@@ -226,13 +231,16 @@ summary{cursor:pointer;color:var(--link)}
   .pair{grid-template-columns:1fr}
   .walk .mini-phone{max-width:14rem}
   .act-grid{grid-template-columns:1fr}
+  .focus-sec .act-shots{order:2}
 }
 @media (max-width:44rem){
   .feature-grid{grid-template-columns:1fr}
   .walk-2{grid-template-columns:repeat(2,minmax(0,1fr));gap:1.25rem}
   .walk-2 h3{font-size:1rem}
   .feature-grid.fg-4{grid-template-columns:1fr}
-  .pair-item{grid-template-columns:minmax(0,8.5rem) minmax(0,1fr);gap:1.1rem;padding:1rem}
+  .pair-item,.pair-1 .pair-item{grid-template-columns:minmax(0,8.5rem) minmax(0,1fr);gap:1.1rem;padding:1rem}
+  .pair-1 .pair-item h3{font-size:1.1rem}
+  .pair-1 .pair-item p{font-size:.92rem}
   .pair-item h3{font-size:1.05rem}
   .pair-item p{font-size:.9rem}
   .act-shots .mini-phone{max-width:15rem}

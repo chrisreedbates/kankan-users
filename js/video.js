@@ -1,6 +1,8 @@
-// Hero video: pause/play control (WCAG 2.2.2) and reduced-motion handling.
-// No network, no storage. Without this script the videos autoplay, and CSS
-// shows the still poster instead when the visitor prefers reduced motion.
+// Hero video: starts playback (only when the visitor has not asked for reduced
+// motion) and provides the pause/play control (WCAG 2.2.2). The <video> has no
+// autoplay attribute, so nothing moves before this script decides. Without JS,
+// CSS hides the video and the still poster (the icon card) shows.
+// No network calls of its own, no storage.
 (function () {
   'use strict';
   document.documentElement.classList.add('js');
