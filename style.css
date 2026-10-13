@@ -138,6 +138,8 @@ summary{cursor:pointer;color:var(--link)}
 .screen img,.screen video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .screen picture{position:absolute;inset:0}
 html:not(.js) .screen video{display:none}
+.screen video{opacity:0;transition:opacity .3s}
+.screen video.is-live{opacity:1}
 .device{flex-direction:column;align-items:center;gap:1rem}
 .vbtn{display:inline-flex;align-items:center;gap:.5rem;font:inherit;font-size:.82rem;font-weight:600;color:var(--muted);background:var(--bg-elev);border:1px solid var(--rule);border-radius:999px;padding:.4rem .85rem .4rem .65rem;min-height:2.25rem;cursor:pointer;box-shadow:var(--shadow)}
 .vbtn:hover{color:var(--fg)}
@@ -168,7 +170,6 @@ html:not(.js) .screen video{display:none}
 .act-copy .meta{max-width:30rem}
 .act-shots{display:flex;justify-content:center}
 .act-shots .mini-phone{width:100%;max-width:17rem}
-.stepnum{display:inline-grid;place-items:center;width:1.4rem;height:1.4rem;border-radius:50%;background:var(--brand-soft);color:var(--link);font-size:.75rem;letter-spacing:0;margin-right:.6rem;vertical-align:.05rem}
 .walk-2{grid-template-columns:repeat(2,minmax(0,17rem));gap:2rem 4rem}
 .activity{border-top:0;padding-top:clamp(1rem,3vw,2rem)}
 .feature-grid.fg-4{grid-template-columns:repeat(4,minmax(0,1fr))}

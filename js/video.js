@@ -34,6 +34,13 @@
       label.textContent = wantPlay ? 'Pause video' : 'Play video';
     }
 
+    // Keep the <picture> poster visible until a clip has really started, so a
+    // video that never plays (reduced motion) never shows as an empty box.
+    videos.forEach(function (v) {
+      v.addEventListener('playing', function () { v.classList.add('is-live'); });
+      v.addEventListener('emptied', function () { v.classList.remove('is-live'); });
+    });
+
     btn.addEventListener('click', function () { wantPlay = !wantPlay; sync(); });
     var scheme = window.matchMedia('(prefers-color-scheme: dark)');
     // <source media> is only evaluated on load, so reload to pick the other scheme's clip.
