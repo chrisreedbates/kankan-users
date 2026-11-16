@@ -170,6 +170,7 @@ html:not(.js) .screen video{display:none}
 .act-copy .meta{max-width:30rem}
 .act-shots{display:flex;justify-content:center}
 .act-shots .mini-phone{width:100%;max-width:17rem}
+.assistants-shot{margin-top:2.5rem}
 .walk-2{grid-template-columns:repeat(2,minmax(0,17rem));gap:2rem 4rem}
 .activity{border-top:0;padding-top:clamp(1rem,3vw,2rem)}
 .feature-grid.fg-4{grid-template-columns:repeat(4,minmax(0,1fr))}
@@ -206,6 +207,7 @@ html:not(.js) .screen video{display:none}
 .feature-grid li{margin:0;padding:1.5rem 1.4rem 1.6rem;background:var(--bg-elev);border:1px solid var(--rule);border-radius:var(--radius);box-shadow:var(--shadow)}
 .feature-grid h3{margin:1rem 0 .4rem;font-size:1.05rem}
 .feature-grid p{margin:0;color:var(--muted);font-size:.95rem;line-height:1.55}
+.feature-grid+.meta{margin-top:1.5rem;max-width:44rem}
 .ficon{width:2.6rem;height:2.6rem;padding:.55rem;border-radius:.8rem;background:var(--brand-soft);fill:none;stroke:var(--link);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
 
 /* Privacy band */

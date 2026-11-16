@@ -15,7 +15,7 @@
 <header><nav aria-label="Main"><a href="index.html"><strong>KanKan</strong></a> <a href="support.html">Support</a> <a href="contact.html">Report a problem</a> <a href="privacy.html">Privacy</a></nav></header>
 <main>
 <h1>Privacy Policy</h1>
-<p class="meta">Last updated: 2026-10-06</p>
+<p class="meta">Last updated: 2026-11-16</p>
 <p class="note"><strong>Short version:</strong> The app collects nothing automatically. Your boards stay on your devices and in your own iCloud. DECEMBER CAPITAL does not receive, see or store them. There is no account, no analytics, no tracking and no ads.</p>
 
 <h2>Who is responsible (controller)</h2>
@@ -36,9 +36,13 @@
 <p>KanKan Unlimited is an auto-renewing subscription. Apple processes the payment. DECEMBER CAPITAL does not receive your payment details or your Apple Account details. DECEMBER CAPITAL sees only aggregate sales and subscription reports that Apple provides. KanKan checks your subscription status with Apple, on your device, to unlock features.</p>
 
 <h2>Agent Access (Mac only)</h2>
-<p>Agent Access is optional. It is a local server that runs on your Mac only, while the app is open. It lets AI assistants on that same Mac read and change your board. It uses access tokens that you create. You can revoke them at any time. KanKan accepts these connections from that Mac only.</p>
+<p>Agent Access is optional. It is a local server that runs on your Mac only, while the app is open. It lets AI assistants on that same Mac read and change your boards, for example Claude, ChatGPT and Grok, or coding tools like Claude Code, Codex and Cursor. Assistants cannot connect from your iPhone or from the internet. It uses access tokens that you create, each one read-only or read and write. You can revoke them at any time. KanKan accepts these connections from that Mac only.</p>
+<p>By default, an assistant must ask you in its chat before it deletes anything or changes many cards at once. When an assistant changes a card, the card's activity log shows the assistant's name. The audit log on your Mac records what each assistant did.</p>
 <p>Agent Access sends nothing to DECEMBER CAPITAL or to any server. If iCloud sync is on, your token names and the agent activity log (which includes card titles the agent touched) sync to your own private iCloud like your boards.</p>
 <p>If you give a token to an assistant, that assistant can read the board content the token allows. What it does with that content is governed by that assistant's provider and settings, not by KanKan. Give a token only to software you trust.</p>
+
+<h2>Siri and Shortcuts</h2>
+<p>KanKan's Siri and Shortcuts actions run on your device, on your local KanKan data. KanKan does not send this data to DECEMBER CAPITAL. Apple's own privacy policy applies to Siri.</p>
 
 <h2>Notifications</h2>
 <p>Reminders and the daily summary are local notifications. Your device schedules and shows them. They are not sent from a server. The app asks your permission first. You can turn notifications off in the system Settings.</p>
@@ -46,16 +50,17 @@
 <h2 id="reports">Support and problem reports</h2>
 <p>The "Report a problem" feature in the app shows the report to you first. It does not send anything by itself. The report leaves your device only if you choose to email it to us. The report can contain:</p>
 <ul>
+<li>why the report was made (for example from Settings, or after the app quit unexpectedly) and when;</li>
 <li>app version and build, platform, system version, device model and locale;</li>
 <li>the data-format fingerprint and store type;</li>
 <li>whether iCloud is available, and sync status and error codes;</li>
 <li>whether the last session ended in a crash or hang, with hang records;</li>
-<li>counts (for example of boards and cards);</li>
+<li>counts (for example of boards, cards, tags and agent tokens) and the depth of your nested boards;</li>
 <li>a technical event log: up to 200 recent app events with times (operation names, positions and counts, navigation and drag events, app launch, foreground and background, hang and report events);</li>
 <li>the kind, source and time of the 20 most recent entries in your card activity log, never their text;</li>
-<li>recent agent tool names, outcomes and times.</li>
+<li>the tool name, outcome and time of the 20 most recent agent actions.</li>
 </ul>
-<p>It never contains card or board titles, notes or checklist text.</p>
+<p>It never contains card, column, board or tag names, notes, checklist or log text, due dates, token names or tokens.</p>
 <p>If you email us, we receive what you send: your message, your email address and the report if you include it. We use it only to help you and to fix problems. We do not use it for marketing. <strong>Support emails are deleted 12 months after the last message in the conversation.</strong> You can ask us to delete them sooner.</p>
 <p>There is no automated decision-making or profiling.</p>
 

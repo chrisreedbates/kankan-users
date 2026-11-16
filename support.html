@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="no-referrer">
 <title>KanKan Support</title>
-<meta name="description" content="How to get help with KanKan: email, sync, subscription, restore, cancel and data export.">
+<meta name="description" content="How to get help with KanKan: email, sync, subscription, the card limit, the Today screen, Siri and Shortcuts, Agent Access and data export.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,7 +17,7 @@
 <h1>KanKan Support</h1>
 <h2>Contact</h2>
 <p>Email <a href="mailto:support@getkankan.com">support@getkankan.com</a>. Please say which device and app version you use. Do not send your whole board. Describe the problem instead.</p>
-<p>In the app, you can also choose <strong>Report a problem</strong>. It shows you the report first. It is sent only if you choose to email it. See <a href="contact.html">Report a problem</a>.</p>
+<p>In the app, you can also choose Settings &rarr; <strong>Report a Problem</strong>. It shows you the report first. It is sent only if you choose to email it. See <a href="contact.html">Report a problem</a>.</p>
 
 <h2>Frequently asked questions</h2>
 
@@ -26,7 +26,7 @@
 <p>If you turn sync off, your boards stay on each device.</p>
 
 <h3>How does the subscription work?</h3>
-<p>KanKan Unlimited is an auto-renewing subscription. Apple handles the purchase, the price and the billing. The price is shown in the App Store before you subscribe. New eligible subscribers can get a 1-month free trial, when Apple offers it. After that, the free plan lets you keep 10 unarchived cards. Done cards count until you archive them. If a subscription ends, all your work stays available. You can still view, edit, complete, archive and export it. You just cannot add or restore cards beyond the free allowance. One subscription works on iPhone and Mac with the same Apple Account.</p>
+<p>KanKan Unlimited is an auto-renewing subscription. Apple handles the purchase, the price and the billing. The price is shown in the App Store before you subscribe. New eligible subscribers can get a 1-month free trial, when Apple offers it. The trial renews as a paid subscription unless you cancel at least 24 hours before it ends. Without a subscription, the free plan lets you keep 10 unarchived cards. Done cards count until you archive them. If a subscription ends, all your work stays available. You can still view, edit, complete, archive, delete and export it. You just cannot add or restore cards beyond the free allowance. One subscription works on iPhone and Mac with the same Apple Account.</p>
 
 <h3>How do I restore a purchase?</h3>
 <p>Open Settings in KanKan. Choose "Upgrade to KanKan Unlimited" (or "Manage KanKan Unlimited" if you already subscribed). Then choose Restore Purchases. Use the same Apple Account you bought with.</p>
@@ -40,8 +40,24 @@
 <h3>How do I delete my data?</h3>
 <p>On iPhone, deleting the app removes its data from the device. On Mac, moving the app to the Trash does not remove its data. Delete the folder <code>~/Library/Containers/com.chrisbates.kankan</code> too (in Finder: Go, Go to Folder). Turn off iCloud Sync on all your devices and reopen KanKan. Then choose Settings &rarr; Reset iCloud Data&hellip;.</p>
 
-<h3>What is Agent Access on Mac?</h3>
-<p>Agent Access is optional and Mac only. It lets AI assistants that run on the same Mac read and change your board. It is a local server on your Mac. You create access tokens in Settings. You can revoke them at any time. It works only while the app is open.</p>
+<h3>Why can&rsquo;t I add a card?</h3>
+<p>The free plan lets you keep 10 unarchived cards. Done cards count until you archive them. Checklist items do not count. To make room, archive cards you have finished. Or choose KanKan Unlimited for no card limit.</p>
+
+<h3>What is the Today screen?</h3>
+<p>The Today screen shows one list: what is overdue, what is due today, forgotten cards and what is coming up in the next 7 days. A forgotten card is a card in Doing with no due date and no activity for more than 7 days. On iPhone, tap the sun button on your main board, or choose Today in the More (&hellip;) menu. On Mac, choose Window &rarr; Today or press Shift-Command-T.</p>
+
+<h3>Can I use Siri and Shortcuts?</h3>
+<p>Yes. KanKan has four actions: add a card, see what is due today, move a card and open a board. Ask Siri, or add them to a shortcut in the Shortcuts app. They run on your device, on your own boards.</p>
+
+<h3 id="agent-access">What is Agent Access on Mac?</h3>
+<p>Agent Access is optional and Mac only. It lets AI assistants that run on the same Mac work on your boards. For example Claude, ChatGPT and Grok, or coding tools like Claude Code, Codex and Cursor. The assistant must support MCP (Model Context Protocol). It is a local server inside the KanKan Mac app. It sends nothing to the internet.</p>
+<ul>
+<li><strong>Tokens.</strong> In Settings &rarr; Agent Access, create one token for each assistant. Choose read-only or read and write. You can revoke a token at any time.</li>
+<li><strong>What a read-and-write token can do.</strong> Add, edit, move, archive and restore cards. Change checklists, due dates and reminders. Create and arrange boards, columns and tags.</li>
+<li><strong>Deleting needs your yes.</strong> Before an assistant deletes anything, or changes more than 10 cards at once, it asks you in its chat. Nothing changes until you say yes. This setting is on by default for each read-and-write token. Only you can turn it off, in Settings.</li>
+<li><strong>Names in the log.</strong> When an assistant changes a card, the card&rsquo;s activity log shows the assistant&rsquo;s name. Assistants cannot edit or delete log lines, and cannot change your settings.</li>
+<li><strong>KanKan must be open.</strong> Assistants can reach your boards only while the KanKan Mac app is open and the Mac is awake. They cannot connect from your iPhone or from the internet, or when your Mac is asleep or off.</li>
+</ul>
 
 <p>See also the <a href="privacy.html">Privacy Policy</a>.</p>
 </main>
