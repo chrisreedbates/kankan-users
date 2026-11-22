@@ -123,6 +123,7 @@ summary{cursor:pointer;color:var(--link)}
 .hero .lead{font-size:clamp(1.12rem,1.8vw,1.3rem);max-width:34rem;margin:0 0 2rem}
 .cta-row{display:flex;flex-wrap:wrap;align-items:center;gap:1rem 1.6rem}
 .soon{display:inline-flex;align-items:center;gap:.65rem;margin:0;padding:.8rem 1.35rem;border-radius:999px;background:var(--fg);color:var(--bg);font-weight:620;font-size:1rem;letter-spacing:-.005em;box-shadow:var(--shadow)}
+.soon{text-decoration:none}.soon:hover{opacity:.9}
 .soon .dot{width:.55rem;height:.55rem;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px rgba(255,176,58,.28)}
 .textlink{font-weight:600;text-decoration:none}
 .textlink:hover{text-decoration:underline}
